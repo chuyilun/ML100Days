@@ -100,7 +100,7 @@
       * 統計值：如平均數、標準差、中位數、分位數
       * 畫圖：如直方圖、盒圖、次數累積分布等
       * [Ways to Detect and Remove the Outliers](https://towardsdatascience.com/ways-to-detect-and-remove-the-outliers-404d16608dba)
-        * 視覺方法--boxplot, scatter plot
+        * 視覺方法--[boxplot,](https://cloud.tencent.com/developer/article/1429994) scatter plot
          ```python
          import seaborn as sns
          sns.boxplot(x=boston_df['DIS'])
