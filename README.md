@@ -76,6 +76,7 @@
       * LOOCV (Leave-one-out cross-validation)
       * K-fold Cross Validation
   * D8：EDA資料分佈
+    > 處理異常值
     * 平均數：mean()、中位數：median()、眾數：mode()、最小值：min()、最大值：max()、四分位差：quantile()、變異數：var()、標準差：std()
     * [matplotlib](https://matplotlib.org/stable/index.html)
      ```python
