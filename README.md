@@ -92,6 +92,7 @@
      fig, ((ax1, ax2), (ax3, ax4)) = plt.subplot(2, 2)
      ```
   * D9:EDA 離群值(Outliner)及其處理
+    > [loc, iloc用法](https://blog.csdn.net/W_weiying/article/details/81411257)
     * Outliers 的處理方法
       * 新增欄位用以紀錄異常與否(Y/N)
       * 整欄不用
