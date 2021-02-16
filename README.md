@@ -68,9 +68,9 @@
      image = cv2.cvtcolor(image,cv2.COLOR_BGR2RGB)
      ```
   * D6：EDA: 欄位的資料類型介紹及處理
-    * LabelEncoder(.fit/.transform)+OneHotEncoder(get_dummies)
+    > LabelEncoder(.fit/.transform)+OneHotEncoder(get_dummies)
   * D7：特徵類型
-    * pd.concat合併表,drop,groupby,aggregate + int/float/object類型認識
+    > pd.concat合併表,drop,groupby,aggregate + int/float/object類型認識
     * 交叉驗證(Cross Validation)
       * The Validation Set Approach
       * LOOCV (Leave-one-out cross-validation)
