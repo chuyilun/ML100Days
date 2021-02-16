@@ -76,3 +76,18 @@
       * LOOCV (Leave-one-out cross-validation)
       * K-fold Cross Validation
   * D8：EDA資料分佈
+    * 平均數：mean()、中位數：median()、眾數：mode()、最小值：min()、最大值：max()、四分位差：quantile()、變異數：var()、標準差：std()
+    * [matplotlib](https://matplotlib.org/stable/index.html)
+     ```python
+     import matplotlib.pyplot as plt
+     # using the variable ax for single a Axes
+     fig, ax = plt.subplots()
+
+     # using the variable axs for multiple Axes
+     fig, axs = plt.subplots(2, 2)
+
+     # using tuple unpacking for multiple Axes
+     fig, (ax1, ax2) = plt.subplot(1, 2)
+     fig, ((ax1, ax2), (ax3, ax4)) = plt.subplot(2, 2)
+     ```
+    
