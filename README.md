@@ -1,9 +1,9 @@
 # ML100Days
 
 ### 機器學習概論
-  * Day1 資料分析與評估資料 選擇一組dataset並說明WHAT, WHO, WHICH
-  * Day2 機器學習概論 ML應用前景，可能的發展
-  * Day3 機器學習流程與步驟
+  * D1 資料分析與評估資料 選擇一組dataset並說明WHAT, WHO, WHICH
+  * D2 機器學習概論 ML應用前景，可能的發展
+  * D3 機器學習流程與步驟
     * 資料蒐集、前置處理
       * 政府公開資料、Kaggle 資料
         * 結構化資料 : Excel 檔、CSV 檔
@@ -32,7 +32,7 @@
       * Tree-base model，樹模型
       * Neural network，神經網路
       * Hyperparameter，根據對模型了解和訓練情形進行調整
-  * Day4 HTTP Server-Client 架構說明與 利用 Python 存取 API
+  * D4 HTTP Server-Client 架構說明與 利用 Python 存取 API
 
 ### 資料清理數據前處理
   * D5：如何新建一個 dataframe? 如何讀取其他資料? (非 csv 的資料)
