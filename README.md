@@ -38,26 +38,26 @@
   * D5：如何新建一個 dataframe? 如何讀取其他資料? (非 csv 的資料)
     * 用pd.DataFrame建立
     * CSV
-     ```
+     ```python
      import pandas as pd
      df = pd.read_csv('example.csv') # sep=','
      df = pd.read_table('example.csv') # sep='\t'
      ```
     * text
-     ```
+     ```python
      with open('example.txt','r') as f:
      data = f.readlines()
      print(data)
      ```
     * Json
-     ```
+     ```python
      import json
      with open('example.json','r') as f:
      data = json.load(f)
      print(data)
      ```
     * 矩陣檔 (mat)
-     ```
+     ```python
      import scipy.io as sio
      data = sio.load('example.mat')
      ```
@@ -70,4 +70,5 @@
   * D6：EDA: 欄位的資料類型介紹及處理
     * LabelEncoder(.fit/.transform)+OneHotEncoder(get_dummies)
   * D7：特徵類型
+    
   * D8：EDA資料分佈
