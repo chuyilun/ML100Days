@@ -91,4 +91,31 @@
      fig, (ax1, ax2) = plt.subplot(1, 2)
      fig, ((ax1, ax2), (ax3, ax4)) = plt.subplot(2, 2)
      ```
+  * D9:EDA 離群值(Outliner)及其處理
+    * Outliers 的處理方法
+      * 新增欄位用以紀錄異常與否(Y/N)
+      * 整欄不用
+      * 填補：中位數, Min, Max 或平均數
+    * 檢查異常值的方法
+      * 統計值：如平均數、標準差、中位數、分位數
+      * 畫圖：如直方圖、盒圖、次數累積分布等
+      * [Ways to Detect and Remove the Outliers](https://towardsdatascience.com/ways-to-detect-and-remove-the-outliers-404d16608dba)
+        * 視覺方法--boxplot, scatter plot
+         ```python
+         import seaborn as sns
+         sns.boxplot(x=boston_df['DIS'])
+         ```
+        * 統計方法--zscore, IQR
+         ```python
+         Q1 = boston_df_o1.quantile（0.25）
+         Q3 = boston_df_o1.quantile（0.75）
+         IQR = Q3-Q1 
+         print（IQR）  #計算四分衛間距(中間50%)
+         print(boston_df_o1 < (Q1 - 1.5 * IQR)) |(boston_df_o1 > (Q3 + 1.5 * IQR))   #列出所有outliers
+         
+         #刪除outlier
+         boston_df_out = boston_df_o1 [〜（（boston_df_o1 <（Q1- 1.5 * IQR））|（boston_df_o1>（Q3 + 1.5 * IQR）））。any（axis = 1）]
+         boston_df_out.shape
+         ```
+
     
