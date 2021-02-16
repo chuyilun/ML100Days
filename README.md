@@ -117,5 +117,9 @@
          boston_df_out = boston_df_o1 [〜（（boston_df_o1 <（Q1- 1.5 * IQR））|（boston_df_o1>（Q3 + 1.5 * IQR）））。any（axis = 1）]
          boston_df_out.shape
          ```
-
-    
+      * 標準差與容忍範圍
+        * 1 個標準差: 涵蓋 68% 數據
+        * 2 個標準差: 涵蓋 95% 數據
+        * 3 個標準差: 涵蓋 99.7% 數據
+        * 如果一個數字超過平均值 + 3 個標準差 !!!有問題
+  
