@@ -62,11 +62,12 @@
      data = sio.load('example.mat')
      ```
     * PNG/JPG
-     ```
+     ```python
      import cv2
      image = cv2.imread('example.jpg') # Cv2 會以 GBR 讀入
      image = cv2.cvtcolor(image,cv2.COLOR_BGR2RGB)
      ```
   * D6：EDA: 欄位的資料類型介紹及處理
+    * LabelEncoder(.fit/.transform)+OneHotEncoder(get_dummies)
   * D7：特徵類型
   * D8：EDA資料分佈
