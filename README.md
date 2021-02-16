@@ -9,8 +9,9 @@
   </ul>
 
 <h2>資料清理數據前處理<h2>
-
-<li>D5：如何新建一個 dataframe? 如何讀取其他資料? (非 csv 的資料)</li>
-<li>D6：EDA: 欄位的資料類型介紹及處理</li>
-<li>D7：特徵類型</li>
-<li>D8：EDA資料分佈</li>
+  <ul>
+    <li>D5：如何新建一個 dataframe? 如何讀取其他資料? (非 csv 的資料)</li>
+    <li>D6：EDA: 欄位的資料類型介紹及處理</li>
+    <li>D7：特徵類型</li>
+    <li>D8：EDA資料分佈</li>
+  </ul>
