@@ -135,4 +135,12 @@
        * 如果一個數字超過平均值 + 3 個標準差 !!!有問題
   * D10：數值型特徵 - 去除離群值
     * 1 way:捨棄outlier
+     ```python
+     keep_indexs = (df['1stFlrSF']> 450) & (df['1stFlrSF']< 2500)  #設立條件後，將新的數值們存到新變數中
+     df = df[keep_indexs]
+     ```
     * 2 way:調整outlier
+     ```python
+     #dataframe.clip()用於在數據單元格中任何單元格可以具有的值設置下限和上限
+     df['1stFlrSF'] = df['1stFlrSF'].clip(0, 2500)
+     ```
