@@ -5,7 +5,7 @@
   * D2 機器學習概論 ML應用前景，可能的發展
   <details>
   <summary>● D3 機器學習流程與步驟</summary>
-    * 資料蒐集、前置處理
+    <p>● 資料蒐集、前置處理<p>
       * 政府公開資料、Kaggle 資料
         * 結構化資料 : Excel 檔、CSV 檔
         * 非結構化資料 : 圖片、影音、文字
@@ -33,7 +33,7 @@
       * Tree-base model，樹模型
       * Neural network，神經網路
       * Hyperparameter，根據對模型了解和訓練情形進行調整
-    </details>
+  </details>
   * D4 HTTP Server-Client 架構說明與 利用 Python 存取 API
 
 ### 資料清理數據前處理
