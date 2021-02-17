@@ -4,7 +4,7 @@
   * D1 資料分析與評估資料 選擇一組dataset並說明WHAT, WHO, WHICH
   * D2 機器學習概論 ML應用前景，可能的發展
   <details>
-  <summary>* D3 機器學習流程與步驟</summary>
+  <summary>● D3 機器學習流程與步驟</summary>
     * 資料蒐集、前置處理
       * 政府公開資料、Kaggle 資料
         * 結構化資料 : Excel 檔、CSV 檔
