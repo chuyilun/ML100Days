@@ -3,9 +3,8 @@
 ### 機器學習概論
   * D1 資料分析與評估資料 選擇一組dataset並說明WHAT, WHO, WHICH
   * D2 機器學習概論 ML應用前景，可能的發展
-  <details>
-  <summary>● D3 機器學習流程與步驟</summary>
-  <p>    ● 資料蒐集、前置處理<p>
+  * D3 機器學習流程與步驟
+    * 資料蒐集、前置處理
       * 政府公開資料、Kaggle 資料
         * 結構化資料 : Excel 檔、CSV 檔
         * 非結構化資料 : 圖片、影音、文字
@@ -33,7 +32,6 @@
       * Tree-base model，樹模型
       * Neural network，神經網路
       * Hyperparameter，根據對模型了解和訓練情形進行調整
-  </details>
   * D4 HTTP Server-Client 架構說明與 利用 Python 存取 API
 
 ### 資料清理數據前處理
@@ -130,9 +128,9 @@
          boston_df_out = boston_df_o1 [〜（（boston_df_o1 <（Q1- 1.5 * IQR））|（boston_df_o1>（Q3 + 1.5 * IQR）））。any（axis = 1）]
          boston_df_out.shape
          ```
-      * 標準差與容忍範圍
-        * 1 個標準差: 涵蓋 68% 數據
-        * 2 個標準差: 涵蓋 95% 數據
-        * 3 個標準差: 涵蓋 99.7% 數據
-        * 如果一個數字超過平均值 + 3 個標準差 !!!有問題
-  
+      <details><summary>* 標準差與容忍範圍</summary>
+       <p> * 1 個標準差: 涵蓋 68% 數據</p>
+       <p> * 2 個標準差: 涵蓋 95% 數據</p>
+       <p> * 3 個標準差: 涵蓋 99.7% 數據</p>
+       <p> * 如果一個數字超過平均值 + 3 個標準差 !!!有問題</p>
+      </details>
