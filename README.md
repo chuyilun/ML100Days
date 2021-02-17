@@ -1,9 +1,9 @@
 # ML100Days
 
 ### 機器學習概論
-  * D1 資料分析與評估資料 選擇一組dataset並說明WHAT, WHO, WHICH
-  * D2 機器學習概論 ML應用前景，可能的發展
-  * D3 機器學習流程與步驟
+  * D1：資料分析與評估資料 選擇一組dataset並說明WHAT, WHO, WHICH
+  * D2：機器學習概論 ML應用前景，可能的發展
+  * D3：機器學習流程與步驟
     * 資料蒐集、前置處理
       * 政府公開資料、Kaggle 資料
         * 結構化資料 : Excel 檔、CSV 檔
@@ -32,7 +32,7 @@
       * Tree-base model，樹模型
       * Neural network，神經網路
       * Hyperparameter，根據對模型了解和訓練情形進行調整
-  * D4 HTTP Server-Client 架構說明與 利用 Python 存取 API
+  * D4：HTTP Server-Client 架構說明與 利用 Python 存取 API
 
 ### 資料清理數據前處理
   * D5：如何新建一個 dataframe? 如何讀取其他資料? (非 csv 的資料)
@@ -99,7 +99,17 @@
       * 填補：中位數, Min, Max 或平均數
     * 檢查異常值的方法
       * 統計值：如平均數、標準差、中位數、分位數
+       ```python
+       df.describe()
+       df[col].value_counts()
+       ```
       * 畫圖：如直方圖、盒圖、次數累積分布等
+       ```python
+       df.plot.hist()  # 直方圖
+       df.boxplot()    # 盒圖
+       cdf = app_train['AMT_INCOME_TOTAL'].value_counts().sort_index().cumsum()  #畫ECDF
+       plt.plot(list(df.index), df/df.max())   # 次數累積圖
+       ```
       * [Ways to Detect and Remove the Outliers](https://towardsdatascience.com/ways-to-detect-and-remove-the-outliers-404d16608dba)
         * 視覺方法--[boxplot,](https://cloud.tencent.com/developer/article/1429994) scatter plot
          ```python
@@ -118,9 +128,11 @@
          boston_df_out = boston_df_o1 [〜（（boston_df_o1 <（Q1- 1.5 * IQR））|（boston_df_o1>（Q3 + 1.5 * IQR）））。any（axis = 1）]
          boston_df_out.shape
          ```
-      * 標準差與容忍範圍
-        * 1 個標準差: 涵蓋 68% 數據
-        * 2 個標準差: 涵蓋 95% 數據
-        * 3 個標準差: 涵蓋 99.7% 數據
-        * 如果一個數字超過平均值 + 3 個標準差 !!!有問題
-  
+     * 標準差與容忍範圍
+       * 1 個標準差: 涵蓋 68% 數據
+       * 2 個標準差: 涵蓋 95% 數據
+       * 3 個標準差: 涵蓋 99.7% 數據
+       * 如果一個數字超過平均值 + 3 個標準差 !!!有問題
+  * D10：數值型特徵 - 去除離群值
+    * 1 way:捨棄outlier
+    * 2 way:調整outlier
