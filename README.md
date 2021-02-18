@@ -146,9 +146,10 @@
      ```
   * D11：常用的數值取代：中位數與分位數連續數值標準化
     * 常用以替補的統計值
-    | 常用以替補的統計值  |     方法     |
-    | -------------     |:-------------:|
-    | 中位數(median)     | np.median(value_array)     |
-    | 分位數(quantiles)  | np.quantile(value_array, q = ... )     |
-    | 眾數(mode)         | dictionary method :較快的方法     |
-    | 平均數(mean)       | np.mean(value_array)     |
+    
+    | 常用以替補的統計值  |     方法                          |
+    | ----------------- |:---------------------------------:|
+    | 中位數(median)     | np.median(value_array)            |
+    | 分位數(quantiles)  | np.quantile(value_array, q = ... )|
+    | 眾數(mode)         | dictionary method :較快的方法      |
+    | 平均數(mean)       | np.mean(value_array)              |
