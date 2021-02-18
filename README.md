@@ -145,6 +145,7 @@
      df['1stFlrSF'] = df['1stFlrSF'].clip(0, 2500)
      ```
   * D11：常用的數值取代：中位數與分位數連續數值標準化
+    > [np.percentile用法](https://www.796t.com/article.php?id=22735)
     * 常用以替補的統計值
     
     | 常用以替補的統計值  |     方法                          |
