@@ -1,9 +1,9 @@
 # ML100Days
 
 ### 機器學習概論
-  * D1：資料分析與評估資料 選擇一組dataset並說明WHAT, WHO, WHICH
-  * D2：機器學習概論 ML應用前景，可能的發展
-  * D3：機器學習流程與步驟
+  * __D1：資料分析與評估資料 選擇一組dataset並說明WHAT, WHO, WHICH__
+  * __D2：機器學習概論 ML應用前景，可能的發展__
+  * __D3：機器學習流程與步驟__
     * 資料蒐集、前置處理
       * 政府公開資料、Kaggle 資料
         * 結構化資料 : Excel 檔、CSV 檔
@@ -32,10 +32,10 @@
       * Tree-base model，樹模型
       * Neural network，神經網路
       * Hyperparameter，根據對模型了解和訓練情形進行調整
-  * D4：HTTP Server-Client 架構說明與 利用 Python 存取 API
+  * __D4：HTTP Server-Client 架構說明與 利用 Python 存取 API__
 
 ### 資料清理數據前處理
-  * D5：如何新建一個 dataframe? 如何讀取其他資料? (非 csv 的資料)
+  * __D5：如何新建一個 dataframe? 如何讀取其他資料? (非 csv 的資料)__
     * 用pd.DataFrame建立
     * CSV
      ```python
@@ -67,15 +67,15 @@
      image = cv2.imread('example.jpg') # Cv2 會以 GBR 讀入
      image = cv2.cvtcolor(image,cv2.COLOR_BGR2RGB)
      ```
-  * D6：EDA: 欄位的資料類型介紹及處理
+  * __D6：EDA: 欄位的資料類型介紹及處理__
     > LabelEncoder(.fit/.transform)+OneHotEncoder(get_dummies)
-  * D7：特徵類型
+  * __D7：特徵類型__
     > pd.concat合併表,drop,groupby,aggregate + int/float/object類型認識
     * 交叉驗證(Cross Validation)
       * The Validation Set Approach
       * LOOCV (Leave-one-out cross-validation)
       * K-fold Cross Validation
-  * D8：EDA資料分佈
+  * __D8：EDA資料分佈__
     > 處理異常值
     * 平均數：mean()、中位數：median()、眾數：mode()、最小值：min()、最大值：max()、四分位差：quantile()、變異數：var()、標準差：std()
     * [matplotlib](https://matplotlib.org/stable/index.html)
@@ -91,7 +91,7 @@
      fig, (ax1, ax2) = plt.subplot(1, 2)
      fig, ((ax1, ax2), (ax3, ax4)) = plt.subplot(2, 2)
      ```
-  * D9:EDA 離群值(Outliner)及其處理
+  * __D9:EDA 離群值(Outliner)及其處理__
     > [loc, iloc用法](https://blog.csdn.net/W_weiying/article/details/81411257)
     * Outliers 的處理方法
       * 新增欄位用以紀錄異常與否(Y/N)
@@ -133,7 +133,7 @@
        * 2 個標準差: 涵蓋 95% 數據
        * 3 個標準差: 涵蓋 99.7% 數據
        * 如果一個數字超過平均值 + 3 個標準差 !!!有問題
-  * D10：數值型特徵 - 去除離群值
+  * __D10：數值型特徵 - 去除離群值__
     * 1 way:捨棄outlier
      ```python
      keep_indexs = (df['1stFlrSF']> 450) & (df['1stFlrSF']< 2500)  #設立條件後，將新的數值們存到新變數中
@@ -144,7 +144,7 @@
      #dataframe.clip()用於在數據單元格中任何單元格可以具有的值設置下限和上限
      df['1stFlrSF'] = df['1stFlrSF'].clip(0, 2500)
      ```
-  * D11：常用的數值取代：中位數與分位數連續數值標準化
+  * __D11：常用的數值取代：中位數與分位數連續數值標準化__
     > [np.percentile用法](https://www.796t.com/article.php?id=22735)
     * 常用以替補的統計值
     
