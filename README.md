@@ -170,8 +170,8 @@
     * 合併
    
      ```python
-     pd.concat([df1,df2])    #沿row合併兩個dataframe
-     pd.concat([df1,df2], axis = 1)    #沿column合併兩個dataframe
+     pd.concat([df1,df2])    #沿row合併兩個dataframe，中括號間放表名
+     pd.concat([df1,df2], axis = 1)    #沿column合併兩個dataframe，中括號間放表名
      ```
      ```python
      pd.merge(df1,df2,on = 'id', how = 'outer')    #將df1, df2 以"id"欄做全部合併(缺失值以na補)
