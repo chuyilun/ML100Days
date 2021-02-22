@@ -154,3 +154,7 @@
     | 分位數(quantiles)  | np.quantile(value_array, q = ... )|
     | 眾數(mode)         | dictionary method :較快的方法      |
     | 平均數(mean)       | np.mean(value_array)              |
+  * __D12：數值型特徵-補缺失值與標準化__
+    |     標準化模型     |              方法                          |
+    |     非樹狀模型     |  線性回歸、羅吉斯回歸、類神經，對預測會有影響  |
+    |      樹狀模型      |決策樹、隨機森林樹、梯度提升樹，對預測不會有影響|
