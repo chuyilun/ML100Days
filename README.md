@@ -160,3 +160,44 @@
     | ----------------- |:------------------------------------------:|
     |     非樹狀模型     |  線性回歸、羅吉斯回歸、類神經，對預測會有影響  |
     |      樹狀模型      |決策樹、隨機森林樹、梯度提升樹，對預測不會有影響|
+  * __D13：DataFrame operationData frame merge/常用的 DataFrame 操作__
+   * 轉換
+    ```python
+    pd.melt(df)    #將column轉成row
+    pd.pivot(colums='var', values='val')    #將row轉成column
+    ```
+   * 合併
+    ```python
+    pd.concat([df1,df2])    #沿row合併兩個dataframe
+    pd.concat([df1,df2], axis = 1)    #沿column合併兩個dataframe
+    ```
+    ```python
+    pd.merge(df1,df2,on = 'id', how = 'outer')    #將df1, df2 以"id"欄做全部合併(缺失值以na補)
+    pd.merge(df1,df2,on = 'id', how = 'inner')    #將df1, df2 以"id"欄做部分合併
+    ```
+   * subset
+    ```python
+    sub_df = df[df.age > 20]        #邏輯操作(>,<,=,&,|,~,^)
+        df.column.isin(value)
+        pd.isnull(obj)  # df.isnull()   #為Nan
+        pd.notnull(obj) # df.notnull()  #非Nan
+    df = df.drop_duplicates()       #移除重複
+    sub_df = df.head(n = 10)        #找前n筆資料
+    sub_df = df.tail(n = 10)        #找後n筆資料
+    sub_df = df.sample(frac = 0.5)  #抽50%
+    sub_df = df.sample(n = 10)      #抽10筆
+    sub_df = df.iloc[n:m]           #第n筆到m筆
+    new_df = df['col1']或df.col1    #單一欄位
+    new_df = df[['col1','col2','col3']]    #複數欄位
+    new_df = df.filter(regex = ...) #Regex篩選
+    ```
+   * Group
+    ```python
+    sub_df_object = df.groupby(['col1'])
+    
+    sub_df_object.size()          #計算各組數量
+    sub_df_object.describe()      #得到各組的基本統計值
+    sub_df_object['col2'].mean()  #根據col1分組後，計算col2統計值(此例是取平均值)
+    sub_df_object['col2'].apply() #對依col1分組後的col2引用操作
+    sub_df_object['col2'].hist()  #對依col1分組後的col2繪圖
+    ```
