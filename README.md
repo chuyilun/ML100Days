@@ -203,3 +203,6 @@
      sub_df_object['col2'].apply() #對依col1分組後的col2引用操作
      sub_df_object['col2'].hist()  #對依col1分組後的col2繪圖
      ```
+  * __D14：程式實作 EDA: correlation/相關係數簡介__
+    * Correlation Coefficient
+     了解兩個變數之間的線性關係，數值介於-1~1，數值越大相關性越強
