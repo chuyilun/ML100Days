@@ -67,6 +67,7 @@
      image = cv2.imread('example.jpg') # Cv2 會以 GBR 讀入
      image = cv2.cvtcolor(image,cv2.COLOR_BGR2RGB)
      ```
+     > PIL, Skimage, CV2 (CV2 的速度較快，但須注意讀入的格式為 BGR，其他兩個君為RGB) [三者比較](https://zhuanlan.zhihu.com/p/52344534)
   * __D6：EDA: 欄位的資料類型介紹及處理__
     > LabelEncoder(.fit/.transform)+OneHotEncoder(get_dummies)
   * __D7：特徵類型__
@@ -203,3 +204,6 @@
      sub_df_object['col2'].apply() #對依col1分組後的col2引用操作
      sub_df_object['col2'].hist()  #對依col1分組後的col2繪圖
      ```
+  * __D14：程式實作 EDA: correlation/相關係數簡介__
+    * Correlation Coefficient：
+     了解兩個變數之間的線性關係，數值介於-1~1，數值越大相關性越強
